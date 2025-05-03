@@ -1,0 +1,492 @@
+/* فونت وزیر */
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.eot');
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* تنظیمات پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* تایپوگرافی */
+h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #1e40af);
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.35rem;
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* بخش معرفی */
+.intro-section {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  border-right: 4px solid #3b82f6;
+  transition: all 0.3s ease;
+}
+
+.intro-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+}
+
+/* پیشرفت */
+.progress-bar {
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  border-radius: 12px;
+  transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* کارت سؤال */
+.question-card {
+  background-color: #f9fafb;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  border-right: 4px solid #3b82f6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.question-number {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* گروه رادیو */
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+.radio-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.radio-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #e5e7eb;
+  color: #6b7280;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.radio-input:checked + .radio-button {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.radio-input:focus + .radio-button {
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.radio-button:hover {
+  background-color: #dbeafe;
+  transform: scale(1.05);
+}
+
+/* دکمه‌ها */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.prev-button, .next-button, .submit-button, .restart-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prev-button {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.prev-button:hover:not(:disabled) {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.next-button, .submit-button {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.next-button:hover:not(:disabled), .submit-button:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.restart-button {
+  background-color: #ef4444;
+  color: white;
+  margin: 0 auto;
+  display: block;
+}
+
+.restart-button:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* نتایج */
+.results-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.score-card {
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.score-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.score-card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.score-bar {
+  height: 24px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.score-bar-fill {
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: growWidth 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.score-bar-fill.D {
+  background: linear-gradient(90deg, #ef4444, #b91c1c);
+}
+
+.score-bar-fill.I {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.score-bar-fill.S {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.score-bar-fill.C {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+/* آنالیز شخصیت */
+.personality-description, .detailed-analysis {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-right: 4px solid #3b82f6;
+  animation: fadeIn 0.8s ease;
+}
+
+.detailed-analysis {
+  border-right-color: #10b981;
+}
+
+.analysis-prompt {
+  background-color: #f0f9ff;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* آلرت و پیام‌ها */
+.alert {
+  background-color: #fee2e2;
+  border-right: 4px solid #ef4444;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  color: #b91c1c;
+  animation: fadeIn 0.3s ease;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+/* تاریخچه نتایج */
+.history-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+}
+
+.history-list {
+  list-style: none;
+}
+
+.history-item {
+  background-color: #f9fafb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-right: 3px solid #3b82f6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  transform: translateX(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* واکنش‌گرایی */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .radio-options {
+    order: 2;
+    margin: 0.75rem 0;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .prev-button, .next-button, .submit-button, .restart-button {
+    width: 100%;
+  }
+}
+
+/* واکنش‌گرایی برای صفحات کوچک‌تر */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .question-card {
+    padding: 1rem;
+  }
+  
+  .radio-button {
+    width: 30px;
+    height: 30px;
+  }
+}

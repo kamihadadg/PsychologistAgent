@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "category": "D",
+    "weight": 2, 
+    "is_control": false,
+    "text": "وقتی باید تکلیفم را زود تمام کنم، سریع تصمیم می‌گیرم."
+  },
+  {
+    "id": 2,
+    "category": "D",
+    "weight": 1,
+    "is_control": false, 
+    "text": "من دوست دارم در بازی‌ها با دوستانم مسابقه بدهم."
+  },
+  {
+    "id": 3,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "در گروه دوستانم، معمولاً من پیشنهاد می‌دهم چه بازی کنیم."
+  },
+  {
+    "id": 4,
+    "category": "D", 
+    "weight": 3,
+    "is_control": false,
+    "text": "من دوست دارم سرگروه باشم تا فقط عضو گروه."
+  },
+  {
+    "id": 5,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "من از امتحان کردن کارهای جدید نمی‌ترسم."
+  },
+  {
+    "id": 6,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی مشکلی پیش می‌آید، من زود دست به کار می‌شوم."
+  },
+  {
+    "id": 7,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "من حرفم را راحت می‌زنم، حتی اگر بقیه موافق نباشند."
+  },
+  {
+    "id": 8,
+    "category": "D",
+    "weight": 1,
+    "is_control": false,
+    "text": "من کارهای سخت را به کارهای آسان ترجیح می‌دهم."
+  },
+  {
+    "id": 9,
+    "category": "D",
+    "weight": 3,
+    "is_control": false,
+    "text": "وقتی دوستانم نمی‌توانند تصمیم بگیرند، من تصمیم می‌گیرم."
+  },
+  {
+    "id": 10,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "من دوست دارم نظرم را درباره ایده‌های دیگران بگویم."
+  },
+  {
+    "id": 11,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "در کلاس، دوست دارم نظراتم را با بقیه در میان بگذارم."
+  },
+  {
+    "id": 12,
+    "category": "I",
+    "weight": 3,
+    "is_control": false,
+    "text": "من دوست دارم مسئول انجام کارهای گروهی باشم."
+  },
+  {
+    "id": 13,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "من از موقعیت‌هایی که باید سریع تصمیم بگیرم، خوشم می‌آید."
+  },
+  {
+    "id": 14,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی به مشکل برمی‌خورم، زود راه‌حل پیدا می‌کنم."
+  },
+  {
+    "id": 15,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "برایم مهم‌تر است که کار تمام شود تا اینکه چطور انجام شد."
+  },
+  {
+    "id": 16,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "من خوب می‌توانم دیگران را قانع کنم."
+  },
+  {
+    "id": 17,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "در گروه، معمولاً من مسئولیت کارها را قبول می‌کنم."
+  },
+  {
+    "id": 18,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "من از تغییر در برنامه‌ها استقبال می‌کنم."
+  },
+  {
+    "id": 19,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "حتی وقتی کارها سخت می‌شود، من تمرکزم را حفظ می‌کنم."
+  },
+  {
+    "id": 20,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "ترجیح می‌دهم خودم مشکلاتم را حل کنم تا از دیگران کمک بگیرم."
+  },
+  {
+    "id": 21,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "من از آشنا شدن با دوستان جدید خوشحال می‌شوم."
+  },
+  {
+    "id": 22,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "من با تعریف کردن جوک و داستان، دوستانم را می‌خندانم."
+  },
+  {
+    "id": 23,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوستانم معمولاً حرف‌های من را قبول می‌کنند."
+  },
+  {
+    "id": 24,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "من دوست دارم در جاهایی باشم که همه با هم حرف می‌زنند."
+  },
+  {
+    "id": 25,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "من دوست دارم به دوستانم کمک کنم به هدف‌هایشان برسند."
+  },
+  // ادامه سوالات با همین سبک...
+  {
+    "id": 100,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچوقت غمگین نمی‌شوم."
+  }
+]

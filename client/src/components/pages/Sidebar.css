@@ -1,0 +1,242 @@
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1a1f3c 0%, #2a325f 100%);
+  color: white;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Initially hidden */
+  z-index: 1000;
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Show sidebar when open */
+}
+
+.toggle-sidebar-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  padding: 8px 12px;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-sidebar-btn:hover {
+  background: #e86214;
+  transform: scale(1.05);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-icon {
+  font-size: 2rem;
+  color: #f97316;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.header-icon:hover {
+  transform: rotate(15deg);
+}
+
+.sidebar-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-title:hover {
+  color: #f97316;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-section h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #f97316;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-left: 3px solid #f97316;
+  padding-left: 0.5rem;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-section li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-link, .signout-btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-link::before, .signout-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(249, 115, 22, 0.1);
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.sidebar-link:hover::before, .signout-btn:hover::before {
+  left: 0;
+}
+
+.sidebar-link:hover, .signout-btn:hover {
+  color: #f97316;
+  transform: translateX(5px);
+}
+
+.sidebar-link span, .signout-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover .nav-icon,
+.signout-btn:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .toggle-sidebar-btn {
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+
+  .sidebar-header {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-title {
+    font-size: 1.2rem;
+  }
+
+  .header-icon {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-nav {
+    gap: 0.5rem;
+  }
+
+  .sidebar-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-link, .signout-btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-icon {
+    margin-right: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 180px;
+    padding: 0.5rem;
+  }
+
+  .toggle-sidebar-btn {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  .sidebar-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sidebar-title {
+    font-size: 1rem;
+  }
+
+  .header-icon {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  .sidebar-section h3 {
+    font-size: 0.8rem;
+  }
+
+  .sidebar-link, .signout-btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-icon {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+}

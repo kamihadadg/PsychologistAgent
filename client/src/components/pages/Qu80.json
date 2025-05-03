@@ -1,0 +1,702 @@
+[
+    {
+      "id": 1,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "در یک پروژه فوری، ترجیح می‌دهم سریع تصمیم بگیرم تا زمان را از دست ندهم."
+    },
+    {
+      "id": 2,
+      "category": "D",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از رقابت با دیگران برای دستیابی به اهدافم لذت می‌برم."
+    },
+    {
+      "id": 3,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "در بحث‌های گروهی، معمولاً من جهت گفتگو را تعیین می‌کنم."
+    },
+    {
+      "id": 4,
+      "category": "D",
+      "weight": 3,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم رهبری یک تیم را بر عهده بگیرم تا عضوی از آن باشم."
+    },
+    {
+      "id": 5,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ریسک‌های حساب‌شده برای رسیدن به موفقیت استقبال می‌کنم."
+    },
+    {
+      "id": 6,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "در شرایط بحرانی، من اولین کسی هستم که اقدام می‌کند."
+    },
+    {
+      "id": 7,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من مستقیم و صریح نظراتم را بیان می‌کنم، حتی اگر دیگران موافق نباشند."
+    },
+    {
+      "id": 8,
+      "category": "D",
+      "weight": 1,
+      "is_control": false,
+      "text": "من اهداف بزرگ و چالش‌برانگیز را به اهداف ساده ترجیح می‌دهم."
+    },
+    {
+      "id": 9,
+      "category": "D",
+      "weight": 3,
+      "is_control": false,
+      "text": "وقتی دیگران مردد هستند، من تصمیم نهایی را می‌گیرم."
+    },
+    {
+      "id": 10,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از به چالش کشیدن ایده‌های دیگران برای بهبود نتایج لذت می‌برم."
+    },
+    {
+      "id": 11,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "در یک جلسه کاری، ترجیح می‌دهم بحث را هدایت کنم تا فقط گوش دهم."
+    },
+    {
+      "id": 12,
+      "category": "D",
+      "weight": 3,
+      "is_control": false,
+      "text": "من دوست دارم کنترل پروژه‌ها را در دست داشته باشم."
+    },
+    {
+      "id": 13,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از موقعیت‌هایی که نیاز به تصمیم‌گیری سریع دارند، لذت می‌برم."
+    },
+    {
+      "id": 14,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "در مواجهه با موانع، من به‌سرعت راه‌حل پیدا می‌کنم."
+    },
+    {
+      "id": 15,
+      "category": "D",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم روی نتایج تمرکز کنم تا جزئیات فرآیند."
+    },
+    {
+      "id": 16,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از مذاکره برای رسیدن به خواسته‌هایم لذت می‌برم."
+    },
+    {
+      "id": 17,
+      "category": "D",
+      "weight": 3,
+      "is_control": false,
+      "text": "در تیم، من معمولاً کسی هستم که مسئولیت را بر عهده می‌گیرد."
+    },
+    {
+      "id": 18,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ایجاد تغییرات بزرگ در سازمان استقبال می‌کنم."
+    },
+    {
+      "id": 19,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من در برابر فشارهای کاری، قاطع و متمرکز باقی می‌مانم."
+    },
+    {
+      "id": 20,
+      "category": "D",
+      "weight": 2,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم خودم مشکلات را حل کنم تا منتظر کمک دیگران باشم."
+    },
+    {
+      "id": 21,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از ملاقات با افراد جدید در رویدادهای اجتماعی لذت می‌برم."
+    },
+    {
+      "id": 22,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "در یک گروه، من معمولاً با شوخی و داستان‌گویی فضا را شاد می‌کنم."
+    },
+    {
+      "id": 23,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من به راحتی می‌توانم دیگران را برای پذیرش ایده‌هایم متقاعد کنم."
+    },
+    {
+      "id": 24,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم در محیط‌های پویا و پر از تعامل کار کنم."
+    },
+    {
+      "id": 25,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از الهام بخشیدن به دیگران برای رسیدن به اهدافشان لذت می‌برم."
+    },
+    {
+      "id": 26,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من معمولاً خوش‌بین هستم و نیمه پر لیوان را می‌بینم."
+    },
+    {
+      "id": 27,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "در جلسات، من دوست دارم ایده‌های خلاقانه مطرح کنم."
+    },
+    {
+      "id": 28,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من به راحتی با افراد غریبه ارتباط برقرار می‌کنم."
+    },
+    {
+      "id": 29,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ارائه سخنرانی در مقابل جمع لذت می‌برم."
+    },
+    {
+      "id": 30,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم با افراد مختلف همکاری کنم تا به‌تنهایی کار کنم."
+    },
+    {
+      "id": 31,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از شبکه‌سازی و ایجاد ارتباطات جدید لذت می‌برم."
+    },
+    {
+      "id": 32,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً انرژی مثبت به تیم تزریق می‌کنم."
+    },
+    {
+      "id": 33,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "در یک پروژه گروهی، من اغلب نقش هماهنگ‌کننده را بازی می‌کنم."
+    },
+    {
+      "id": 34,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از به اشتراک گذاشتن تجربیاتم با دیگران لذت می‌برم."
+    },
+    {
+      "id": 35,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم در محیط‌های غیررسمی و دوستانه کار کنم."
+    },
+    {
+      "id": 36,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از جلب توجه در جمع‌های اجتماعی لذت می‌برم."
+    },
+    {
+      "id": 37,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً در بحث‌ها با شور و اشتیاق شرکت می‌کنم."
+    },
+    {
+      "id": 38,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ایجاد انگیزه در دیگران برای پیشرفت لذت می‌برم."
+    },
+    {
+      "id": 39,
+      "category": "I",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم با گفت‌وگو مشکلات را حل کنم."
+    },
+    {
+      "id": 40,
+      "category": "I",
+      "weight": 2,
+      "is_control": false,
+      "text": "من در تیم‌ها، اغلب نقش میانجی را بازی می‌کنم."
+    },
+    {
+      "id": 41,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم در محیط‌های آرام و بدون تنش کار کنم."
+    },
+    {
+      "id": 42,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از کمک به دیگران برای حل مشکلاتشان لذت می‌برم."
+    },
+    {
+      "id": 43,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً صبور و با حوصله با دیگران برخورد می‌کنم."
+    },
+    {
+      "id": 44,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از تغییرات ناگهانی و غیرمنتظره خوشم نمی‌آید."
+    },
+    {
+      "id": 45,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من شنونده خوبی برای دغدغه‌های دیگران هستم."
+    },
+    {
+      "id": 46,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم در تیم کار کنم تا به‌تنهایی."
+    },
+    {
+      "id": 47,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ایجاد روابط بلندمدت و پایدار لذت می‌برم."
+    },
+    {
+      "id": 48,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً از درگیری و بحث‌های تند اجتناب می‌کنم."
+    },
+    {
+      "id": 49,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من به هماهنگی و همکاری در گروه اهمیت زیادی می‌دهم."
+    },
+    {
+      "id": 50,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم کارهایم را با سرعت ثابت پیش ببرم."
+    },
+    {
+      "id": 51,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از حمایت از اعضای تیم در شرایط سخت لذت می‌برم."
+    },
+    {
+      "id": 52,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً قبل از پاسخ دادن، به دیگران فرصت صحبت می‌دهم."
+    },
+    {
+      "id": 53,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم روی وظایف مشخص و تعریف‌شده کار کنم."
+    },
+    {
+      "id": 54,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از محیط‌های کاری با روال منظم لذت می‌برم."
+    },
+    {
+      "id": 55,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً در برابر انتقادها آرام و منطقی باقی می‌مانم."
+    },
+    {
+      "id": 56,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از انجام کارهای تکراری و پایدار لذت می‌برم."
+    },
+    {
+      "id": 57,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم به‌جای رقابت، با دیگران همکاری کنم."
+    },
+    {
+      "id": 58,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از ایجاد فضای صمیمی در تیم لذت می‌برم."
+    },
+    {
+      "id": 59,
+      "category": "S",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً در موقعیت‌های حساس، آرامش خود را حفظ می‌کنم."
+    },
+    {
+      "id": 60,
+      "category": "S",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم وظایفم را با برنامه‌ریزی دقیق انجام دهم."
+    },
+    {
+      "id": 61,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من به جزئیات و دقت در انجام کارها اهمیت زیادی می‌دهم."
+    },
+    {
+      "id": 62,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من قبل از تصمیم‌گیری، همه اطلاعات موجود را تحلیل می‌کنم."
+    },
+    {
+      "id": 63,
+      "category": "C",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم طبق برنامه و ساختار مشخص عمل کنم."
+    },
+    {
+      "id": 64,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از اشتباهات اجتناب می‌کنم و کارم را بازبینی می‌کنم."
+    },
+    {
+      "id": 65,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من به کیفیت کار بیش از سرعت آن اهمیت می‌دهم."
+    },
+    {
+      "id": 66,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از حل مسائل پیچیده و تحلیلی لذت می‌برم."
+    },
+    {
+      "id": 67,
+      "category": "C",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم کارها را منظم و مرتب انجام دهم."
+    },
+    {
+      "id": 68,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از قوانین و استانداردها به‌دقت پیروی می‌کنم."
+    },
+    {
+      "id": 69,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من قبل از اقدام، همه جوانب را بررسی می‌کنم."
+    },
+    {
+      "id": 70,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من به داده‌ها و شواهد برای تصمیم‌گیری تکیه می‌کنم."
+    },
+    {
+      "id": 71,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم در پروژه‌ها، نقش تحلیل‌گر را داشته باشم."
+    },
+    {
+      "id": 72,
+      "category": "C",
+      "weight": 1,
+      "is_control": false,
+      "text": "من از مستندسازی و ثبت دقیق فرآیندها لذت می‌برم."
+    },
+    {
+      "id": 73,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً از تصمیم‌گیری‌های شتاب‌زده اجتناب می‌کنم."
+    },
+    {
+      "id": 74,
+      "category": "C",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم روی یک کار متمرکز شوم تا چند کار همزمان."
+    },
+    {
+      "id": 75,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از بهبود فرآیندها و افزایش کارایی لذت می‌برم."
+    },
+    {
+      "id": 76,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً در برابر تغییرات، ابتدا پیامدها را ارزیابی می‌کنم."
+    },
+    {
+      "id": 77,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از کار با اعداد و داده‌های دقیق لذت می‌برم."
+    },
+    {
+      "id": 78,
+      "category": "C",
+      "weight": 1,
+      "is_control": false,
+      "text": "من ترجیح می‌دهم برنامه‌ریزی بلندمدت داشته باشم."
+    },
+    {
+      "id": 79,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من از شناسایی اشکالات و رفع آن‌ها لذت می‌برم."
+    },
+    {
+      "id": 80,
+      "category": "C",
+      "weight": 2,
+      "is_control": false,
+      "text": "من معمولاً از کارهای بدون ساختار مشخص دوری می‌کنم."
+    },
+    {
+      "id": 81,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه در همه کارها بهترین هستم."
+    },
+    {
+      "id": 82,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هرگز اشتباه نمی‌کنم."
+    },
+    {
+      "id": 83,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من در همه موقعیت‌ها آرامش کامل دارم."
+    },
+    {
+      "id": 84,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت عصبانی نمی‌شوم."
+    },
+    {
+      "id": 85,
+      "continental": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "همه همیشه با نظرات من موافق هستند."
+    },
+    {
+      "id": 86,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه همه چیز را درست پیش‌بینی می‌کنم."
+    },
+    {
+      "id": 87,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من در همه کارها بی‌نقص عمل می‌کنم."
+    },
+    {
+      "id": 88,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت احساس استرس نمی‌کنم."
+    },
+    {
+      "id": 89,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه در هر کاری موفق می‌شوم."
+    },
+    {
+      "id": 90,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت از چیزی نمی‌ترسم."
+    },
+    {
+      "id": 91,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "همه کارهایم همیشه طبق برنامه پیش می‌رود."
+    },
+    {
+      "id": 92,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه بهترین راه‌حل را دارم."
+    },
+    {
+      "id": 93,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت احساس خستگی نمی‌کنم."
+    },
+    {
+      "id": 94,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من در همه زمینه‌ها متخصص هستم."
+    },
+    {
+      "id": 95,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه مورد تحسین دیگران قرار می‌گیرم."
+    },
+    {
+      "id": 96,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت نیاز به کمک دیگران ندارم."
+    },
+    {
+      "id": 97,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه دقیقاً می‌دانم چه می‌خواهم."
+    },
+    {
+      "id": 98,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت از تصمیم‌هایم پشیمان نمی‌شوم."
+    },
+    {
+      "id": 99,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من همیشه در همه چیز پیشرو هستم."
+    },
+    {
+      "id": 100,
+      "category": "Control",
+      "weight": 1,
+      "is_control": true,
+      "text": "من هیچ‌وقت احساس ناامیدی نمی‌کنم."
+    }
+  ]

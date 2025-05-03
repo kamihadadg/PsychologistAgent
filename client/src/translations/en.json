@@ -1,0 +1,186 @@
+{
+  "welcome": "Welcome",
+  "language": "Language",
+  "select_language": "Select Language",
+  "home": {
+    "logo": "KMG1 Trading",
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "about": "About Us", 
+      "signIn": "SIGN IN",
+      "getStarted": "GET STARTED"
+    },
+    "hero": {
+      "title": "Advanced Crypto Trading Platform",
+      "description": "Experience automated crypto trading with our advanced bots. Maximize your profits with real-time market analysis, 24/7, without manual intervention!",
+      "getStarted": "Get Started"
+    },
+    "features": {
+      "title": "Key Features",
+      "automation": {
+        "title": "Full Automation",
+        "description": "Trade 24/7 without your presence."
+      },
+      "analysis": {
+        "title": "Advanced Analysis",
+        "description": "Market analysis with AI and smart algorithms."
+      },
+      "crypto": {
+        "title": "Crypto Support",
+        "description": "Support for Bitcoin, Ethereum, and other cryptocurrencies."
+      }
+    },
+    "pricing": {
+      "title": "Pricing Plans",
+      "basic": {
+        "title": "Basic",
+        "price": "$19/month",
+        "features": [
+          "Up to 5 trades per day",
+          "Support for 3 cryptocurrencies",
+          "Basic market analysis",
+          "Email support"
+        ],
+        "button": "Select Plan"
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$49/month",
+        "features": [
+          "Up to 20 trades per day",
+          "Support for 10 cryptocurrencies",
+          "Advanced AI analysis",
+          "24/7 chat support"
+        ],
+        "button": "Select Plan"
+      },
+      "business": {
+        "title": "Business",
+        "price": "$99/month",
+        "features": [
+          "Unlimited trades",
+          "Support for all cryptocurrencies",
+          "Custom AI strategies",
+          "Priority support"
+        ],
+        "button": "Select Plan"
+      }
+    }
+  },
+  "loading_profile": "Loading profile...",
+  "profile_settings": "Profile Settings",
+  "manage_personal_info": "Manage your personal information and preferences.",
+  "general": "General",
+  "preferences": "Preferences",
+  "error_message": "An error occurred. Please try again.",
+  "general_information": "General Information",
+  "full_name": "Full Name",
+  "email": "Email",
+  "phone_number": "Phone Number",
+  "country": "Country",
+  "save_changes": "Save Changes",
+  "timezone": "Timezone",
+  "theme": "Theme",
+  "english": "English",
+  "spanish": "Spanish",
+  "french": "French",
+  "german": "German",
+  "utc": "UTC",
+  "eastern_time": "Eastern Time",
+  "pacific_time": "Pacific Time",
+  "central_european_time": "Central European Time",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System",
+  "save_preferences": "Save Preferences",
+  "agents_dashboard": "Agents Dashboard",
+  "overview": "Overview",
+  "total_profit": "Total Profit",
+  "portfolio_value": "Portfolio Value",
+  "active_agents": "Active Agents",
+  "success_rate": "Success Rate",
+  "agents_summary": "Agents Summary",
+  "loading_agents": "Loading agents...",
+  "error": "Error",
+  "crypto_signal_agents": "Crypto Signal Agents",
+  "crypto_trading_agents": "Crypto Trading Agents",
+  "email_agents": "Email Agents",
+  "total": "Total",
+  "active": "Active",
+  "stopped": "Stopped",
+  "manage": "Manage",
+  "recent_activity": "Recent Activity",
+  "date": "Date",
+  "agent": "Agent",
+  "type": "Type",
+  "action": "Action",
+  "details": "Details",
+  "crypto": "Crypto",
+  "buy": "Buy",
+  "bought": "Bought",
+  "at": "at",
+  "signal": "Signal",
+  "alert": "Alert",
+  "broke_resistance": "broke resistance",
+  "process": "Process",
+  "processed": "Processed",
+  "emails_from": "emails from",
+  "sell": "Sell",
+  "sold": "Sold",
+  "security": {
+    "title": "Security Settings",
+    "subtitle": "Manage your account security and privacy settings",
+    "tabs": {
+      "password": "Password",
+      "twoFactor": "Two-Factor Auth",
+      "notifications": "Notifications",
+      "devices": "Connected Devices"
+    },
+    "password": {
+      "title": "Change Password",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "update": "Update Password"
+    },
+    "twoFactor": {
+      "title": "Two-Factor Authentication",
+      "status": "2FA Status",
+      "enable": "Enable 2FA",
+      "disable": "Disable 2FA",
+      "scanQR": "Scan QR Code",
+      "enterCode": "Enter Code"
+    },
+    "notifications": {
+      "title": "Security Notifications",
+      "email": "Email Notifications",
+      "sms": "SMS Notifications",
+      "browser": "Browser Notifications"
+    },
+    "devices": {
+      "title": "Connected Devices",
+      "currentDevice": "Current Device",
+      "lastSeen": "Last Seen",
+      "location": "Location",
+      "revoke": "Revoke Access"
+    },
+    "errors": {
+      "passwordMismatch": "New passwords do not match",
+      "passwordChangeFailed": "Failed to change password",
+      "invalidCode": "Invalid verification code"
+    }
+  },
+  "common": {
+    "loading": "Loading security settings..."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "At KMG1 Trading, we're passionate about empowering traders with cutting-edge technology. Our mission is to simplify crypto trading by providing automated, AI-driven solutions that work around the clock to maximize your profits. Founded by a team of crypto enthusiasts and tech experts, we combine years of experience to deliver a reliable and user-friendly platform.",
+    "founder": {
+      "name": "Expert Team",
+      "title": "Crypto & AI Specialists"
+    },
+    "contactButton": "Contact Us"
+  }
+}

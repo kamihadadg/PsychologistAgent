@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Radial Light Effect -->
+    <radialGradient id="lightFlare" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  <rect width="100%" height="100%" fill="url(#lightFlare)" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+
+
+  <!-- Animated Grid Lines (روشن‌تر و پویاتر) -->
+  <g stroke="#00e676" stroke-width="0.8" opacity="0.4" > <!-- سبز نئونی -->
+    <path d="M0 0 L1920 0" class="grid-line">
+      <animate attributeName="d" values="M0 0 L1920 0;M0 1080 L1920 1080" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 0 L0 1080" class="grid-line">
+      <animate attributeName="d" values="M0 0 L0 1080;M1920 0 L1920 1080" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating Crypto Icons (درخشان‌تر) -->
+  <g class="crypto-icons">
+    <!-- Bitcoin -->
+    <circle cx="300" cy="200" r="35" fill="#F7931A" filter="url(#glow)">
+      <animate attributeName="cy" values="200;260;200" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="35;40;35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="300" y="200" text-anchor="middle" fill="white" font-size="24" filter="url(#glow)">₿</text>
+
+    <!-- Ethereum -->
+    <circle cx="500" cy="400" r="30" fill="#627EEA" filter="url(#glow)">
+      <animate attributeName="cy" values="400;460;400" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="30;35;30" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="500" y="400" text-anchor="middle" fill="white" font-size="20" filter="url(#glow)">Ξ</text>
+
+    <!-- Cardano -->
+    <circle cx="700" cy="300" r="25" fill="#0033AD" filter="url(#glow)">
+      <animate attributeName="cy" values="300;360;300" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="25;30;25" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="700" y="300" text-anchor="middle" fill="white" font-size="18" filter="url(#glow)">₳</text>
+  </g>
+
+  <!-- Animated Trading Chart (پررنگ‌تر) -->
+  <g class="trading-chart">
+    <path d="M100 800 L200 750 L300 800 L400 700 L500 750 L600 650 L700 700 L800 600" 
+          stroke="#00e676" stroke-width="4" fill="none" filter="url(#glow)">
+      <animate attributeName="d" 
+               values="M100 800 L200 750 L300 800 L400 700 L500 750 L600 650 L700 700 L800 600;
+                      M100 800 L200 850 L300 800 L400 900 L500 850 L600 950 L700 900 L800 1000;
+                      M100 800 L200 750 L300 800 L400 700 L500 750 L600 650 L700 700 L800 600" 
+               dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Volume Bars (نئونی‌تر) -->
+  <g class="volume-bars">
+    <rect x="100" y="800" width="50" height="100" fill="#00e676" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="height" values="100;250;100" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="200" y="800" width="50" height="150" fill="#00e676" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="height" values="150;300;150" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="300" y="800" width="50" height="200" fill="#00e676" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="height" values="200;350;200" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Moving Averages (روشن‌تر) -->
+  <g class="moving-averages">
+    <path d="M100 700 L200 650 L300 700 L400 600 L500 650 L600 550 L700 600 L800 500" 
+          stroke="#ffeb3b" stroke-width="3" fill="none" opacity="0.8" filter="url(#glow)"> <!-- زرد نئونی -->
+      <animate attributeName="d" 
+               values="M100 700 L200 650 L300 700 L400 600 L500 650 L600 550 L700 600 L800 500;
+                      M100 700 L200 750 L300 700 L400 800 L500 750 L600 850 L700 800 L800 900;
+                      M100 700 L200 650 L300 700 L400 600 L500 650 L600 550 L700 600 L800 500" 
+               dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Animated Particles (بیشتر و جذاب‌تر) -->
+  <g class="particles">
+    <circle cx="100" cy="100" r="3" fill="#00e676" opacity="0.7" filter="url(#glow)">
+      <animate attributeName="cy" values="100;1080" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="100;150;100" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="200" r="4" fill="#ffeb3b" opacity="0.7" filter="url(#glow)">
+      <animate attributeName="cy" values="200;1080" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="300;350;300" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="300" r="3" fill="#3498db" opacity="0.7" filter="url(#glow)">
+      <animate attributeName="cy" values="300;1080" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="500;550;500" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- RSI Indicator (جذاب‌تر) -->
+  <g class="rsi-indicator">
+    <rect x="1600" y="280" width="200" height="100" fill="rgba(0,230,118,0.1)" stroke="#00e676" stroke-width="2" filter="url(#glow)"/>
+    <path d="M1000 150 L1200 50" stroke="#00e676" stroke-width="2" opacity="0.8" filter="url(#glow)">
+      <animate attributeName="d" 
+               values="M1800 380 L1200 50;M1800 50 L1200 380;M1800 
+               150 L1200 50" 
+               dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Support and Resistance Lines (پررنگ‌تر) -->
+  <g class="support-resistance">
+    <line x1="100" y1="500" x2="900" y2="500" stroke="#ffeb3b" stroke-width="2" stroke-dasharray="5,5" opacity="0.7" filter="url(#glow)">
+      <animate attributeName="y1" values="500;550;500" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="500;550;500" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="100" y1="300" x2="900" y2="300" stroke="#ffeb3b" stroke-width="2" stroke-dasharray="5,5" opacity="0.7" filter="url(#glow)">
+      <animate attributeName="y1" values="300;250;300" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="300;250;300" dur="6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>
