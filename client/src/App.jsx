@@ -16,7 +16,8 @@ import Profile from './components/pages/Profile';
 
 
 import Security from './components/pages/Security';
-import DISC from './components/pages/Tests/DISC';
+import DISC from './components/pages/Tests/Adult/DISC';
+import CHDISC from './components/pages/Tests/child/CHDISC';
 
 
 
@@ -34,7 +35,10 @@ function App() {
         
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute> } />
-            <Route path="/DISC" element={<ProtectedRoute> <DISC />  </ProtectedRoute> } />
+            
+            <Route path="/DISC"   element={<ProtectedRoute> <DISC />   </ProtectedRoute> } />
+
+            <Route path="/CHDISC"   element={<ProtectedRoute> <CHDISC />   </ProtectedRoute> } />
           
             
             

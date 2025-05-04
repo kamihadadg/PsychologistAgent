@@ -1,0 +1,704 @@
+
+[
+  {
+    "id": 1,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی باید سریع کاری انجام بدم، زود تصمیم می‌گیرم تا وقت تلف نشه."
+  },
+  {
+    "id": 2,
+    "category": "D",
+    "weight": 1,
+    "is_control": false,
+    "text": "از مسابقه دادن با دوستام برای بردن جایزه خوشم میاد."
+  },
+  {
+    "id": 3,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو بحث‌های گروهی، من می‌گم درباره چی حرف بزنیم."
+  },
+  {
+    "id": 4,
+    "category": "D",
+    "weight": 3,
+    "is_control": false,
+    "text": "دوست دارم رئیس گروه باشم، نه فقط یکی از بچه‌ها."
+  },
+  {
+    "id": 5,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "اگه یه کار کمی خطرناک باشه ولی ارزشش رو داشته باشه، امتحانش می‌کنم."
+  },
+  {
+    "id": 6,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی مشکلی پیش میاد، من اولین نفری‌ام که کاری می‌کنم."
+  },
+  {
+    "id": 7,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "فکرم رو راحت می‌گم، حتی اگه بقیه موافق نباشن."
+  },
+  {
+    "id": 8,
+    "category": "D",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم هدف‌های بزرگ و سخت رو امتحان کنم."
+  },
+  {
+    "id": 9,
+    "category": "D",
+    "weight": 3,
+    "is_control": false,
+    "text": "اگه بقیه ندان چه کار کنن، من تصمیم می‌گیرم."
+  },
+  {
+    "id": 10,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "از این خوشم میاد که نظرات بقیه رو به چالش بکشم تا کار بهتر بشه."
+  },
+  {
+    "id": 11,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو کلاس یا گروه، دوست دارم بحث رو خودم هدایت کنم."
+  },
+  {
+    "id": 12,
+    "category": "D",
+    "weight": 3,
+    "is_control": false,
+    "text": "دوست دارم خودم مسئول پروژه‌ها باشم."
+  },
+  {
+    "id": 13,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "از موقعیت‌هایی که باید سریع فکر کنم و تصمیم بگیرم خوشم میاد."
+  },
+  {
+    "id": 14,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "اگه چیزی سخت باشه، زود راه‌حل پیدا می‌کنم."
+  },
+  {
+    "id": 15,
+    "category": "D",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم به نتیجه کار فکر کنم، نه چیزهای ریز و جزئی."
+  },
+  {
+    "id": 16,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "از حرف زدن برای گرفتن چیزی که می‌خوام لذت می‌برم."
+  },
+  {
+    "id": 17,
+    "category": "D",
+    "weight": 3,
+    "is_control": false,
+    "text": "تو گروه، معمولاً من مسئول کارها می‌شم."
+  },
+  {
+    "id": 18,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "از تغییر چیزهای بزرگ تو مدرسه یا گروه خوشم میاد."
+  },
+  {
+    "id": 19,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی کار سخت می‌شه، بازم محکم و تمرکز دارم."
+  },
+  {
+    "id": 20,
+    "category": "D",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم خودم مشکلات رو حل کنم، نه اینکه منتظر کمک باشم."
+  },
+  {
+    "id": 21,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "از آشنا شدن با بچه‌های جدید تو مهمونی یا مدرسه خوشم میاد."
+  },
+  {
+    "id": 22,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو گروه، معمولاً با شوخی و داستان گفتن همه رو می‌خندونم."
+  },
+  {
+    "id": 23,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "می‌تونم دوستام رو قانع کنم که با نظر من موافق بشن."
+  },
+  {
+    "id": 24,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم جایی کار کنم که پر از حرف زدن و هیجان باشه."
+  },
+  {
+    "id": 25,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "از این خوشم میاد که به بقیه انگیزه بدم تا موفق بشن."
+  },
+  {
+    "id": 26,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "من معمولاً به چیزهای خوب فکر می‌کنم، نه بد."
+  },
+  {
+    "id": 27,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو کلاس، دوست دارم ایده‌های جدید و باحال بدم."
+  },
+  {
+    "id": 28,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "با آدمای جدید راحت حرف می‌زنم."
+  },
+  {
+    "id": 29,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "از صحبت کردن جلوی کلاس یا گروه لذت می‌برم."
+  },
+  {
+    "id": 30,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم با دوستام کار کنم، نه تنهایی."
+  },
+  {
+    "id": 31,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "از پیدا کردن دوستای جدید خوشم میاد."
+  },
+  {
+    "id": 32,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "من معمولاً به گروه انرژی و شادی می‌دم."
+  },
+  {
+    "id": 33,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو کار گروهی، من همه رو با هم هماهنگ می‌کنم."
+  },
+  {
+    "id": 34,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم درباره کارایی که کردم با بقیه حرف بزنم."
+  },
+  {
+    "id": 35,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم تو جای شاد و دوستانه کار کنم."
+  },
+  {
+    "id": 36,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "از این خوشم میاد که تو جمع همه به من توجه کنن."
+  },
+  {
+    "id": 37,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو بحث‌ها با هیجان و علاقه حرف می‌زنم."
+  },
+  {
+    "id": 38,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم به بقیه کمک کنم تا بهتر بشن."
+  },
+  {
+    "id": 39,
+    "category": "I",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم با حرف زدن مشکلات رو حل کنم."
+  },
+  {
+    "id": 40,
+    "category": "I",
+    "weight": 2,
+    "is_control": false,
+    "text": "تو گروه، من معمولاً دعواها رو آروم می‌کنم."
+  },
+  {
+    "id": 41,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم تو جای آروم و بدون دعوا کار کنم."
+  },
+  {
+    "id": 42,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "از کمک کردن به دوستام وقتی مشکل دارن خوشم میاد."
+  },
+  {
+    "id": 43,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "معمولاً با بقیه با حوصله و مهربونی حرف می‌زنم."
+  },
+  {
+    "id": 44,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "از تغییرای یهویی و عجیب خوشم نمیاد."
+  },
+  {
+    "id": 45,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی یکی غصه داره، خوب به حرفاش گوش می‌دم."
+  },
+  {
+    "id": 46,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم با گروه کار کنم، نه تنهایی."
+  },
+  {
+    "id": 47,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "از داشتن دوستای صمیمی که همیشه باهاشون باشم لذت می‌برم."
+  },
+  {
+    "id": 48,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست ندارم با بقیه دعوا یا بحث کنم."
+  },
+  {
+    "id": 49,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم همه تو گروه با هم خوب باشن و کمک کنن."
+  },
+  {
+    "id": 50,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم کارهام رو آروم و با سرعت یکنواخت انجام بدم."
+  },
+  {
+    "id": 51,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "از کمک به دوستام تو وقتای سخت لذت می‌برم."
+  },
+  {
+    "id": 52,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "قبل از حرف زدن، می‌ذارم بقیه نظرشون رو بگن."
+  },
+  {
+    "id": 53,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم کارایی بکنم که دقیقاً بدونم چیه."
+  },
+  {
+    "id": 54,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "از جایی که همه چی منظم و مرتب باشه خوشم میاد."
+  },
+  {
+    "id": 55,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "اگه یکی ازم انتقاد کنه، آروم و منطقی جواب می‌دم."
+  },
+  {
+    "id": 56,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "از انجام کارای تکراری و ساده لذت می‌برم."
+  },
+  {
+    "id": 57,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم به‌جای مسابقه، با بقیه همکاری کنم."
+  },
+  {
+    "id": 58,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "از این خوشم میاد که گروه رو صمیمی و شاد کنم."
+  },
+  {
+    "id": 59,
+    "category": "S",
+    "weight": 2,
+    "is_control": false,
+    "text": "وقتی چیزی سخت می‌شه، آروم می‌مونم."
+  },
+  {
+    "id": 60,
+    "category": "S",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم کارهام رو با برنامه دقیق انجام بدم."
+  },
+  {
+    "id": 61,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم کارهام رو با دقت و درست انجام بدم."
+  },
+  {
+    "id": 62,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "قبل از تصمیم گرفتن، همه چی رو خوب فکر می‌کنم."
+  },
+  {
+    "id": 63,
+    "category": "C",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم کارهام طبق یه برنامه مشخص باشه."
+  },
+  {
+    "id": 64,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "کارم رو چند بار چک می‌کنم تا اشتباه نکنم."
+  },
+  {
+    "id": 65,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم کارم خیلی خوب باشه، حتی اگه طول بکشه."
+  },
+  {
+    "id": 66,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "از حل کردن سوالای سخت و فکری لذت می‌برم."
+  },
+  {
+    "id": 67,
+    "category": "C",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم همه چی مرتب و منظم باشه."
+  },
+  {
+    "id": 68,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "همیشه از قانون‌ها و دستورات خوب پیروی می‌کنم."
+  },
+  {
+    "id": 69,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "قبل از شروع کار، همه چی رو خوب بررسی می‌کنم."
+  },
+  {
+    "id": 70,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "برای تصمیم گرفتن، به اطلاعات و دلیل نگاه می‌کنم."
+  },
+  {
+    "id": 71,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست دارم تو پروژه‌ها، چیزها رو خوب بررسی کنم."
+  },
+  {
+    "id": 72,
+    "category": "C",
+    "weight": 1,
+    "is_control": false,
+    "text": "از نوشتن و ثبت کارهام با دقت لذت می‌برم."
+  },
+  {
+    "id": 73,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست ندارم عجله‌ای تصمیم بگیرم."
+  },
+  {
+    "id": 74,
+    "category": "C",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم روی یه کار تمرکز کنم، نه چند تا کار."
+  },
+  {
+    "id": 75,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "از بهتر کردن کارها و مرتب‌تر کردنشون خوشم میاد."
+  },
+  {
+    "id": 76,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "قبل از تغییر چیزی، اول فکر می‌کنم چی می‌شه."
+  },
+  {
+    "id": 77,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "از کار کردن با عدد و چیزای دقیق لذت می‌برم."
+  },
+  {
+    "id": 78,
+    "category": "C",
+    "weight": 1,
+    "is_control": false,
+    "text": "دوست دارم برای آینده برنامه‌ریزی کنم."
+  },
+  {
+    "id": 79,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "از پیدا کردن اشتباهات و درست کردنشون خوشم میاد."
+  },
+  {
+    "id": 80,
+    "category": "C",
+    "weight": 2,
+    "is_control": false,
+    "text": "دوست ندارم کارای بدون برنامه انجام بدم."
+  },
+  {
+    "id": 81,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه تو همه کارها بهترینم."
+  },
+  {
+    "id": 82,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت اشتباه نمی‌کنم."
+  },
+  {
+    "id": 83,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه تو همه موقعیت‌ها آرومم."
+  },
+  {
+    "id": 84,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت عصبانی نمی‌شم."
+  },
+  {
+    "id": 85,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "همه همیشه با من موافقن."
+  },
+  {
+    "id": 86,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه می‌دونم چی می‌شه."
+  },
+  {
+    "id": 87,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "همه کارهام همیشه عالیه."
+  },
+  {
+    "id": 88,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت استرس ندارم."
+  },
+  {
+    "id": 89,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه تو همه چی موفقم."
+  },
+  {
+    "id": 90,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت از چیزی نمی‌ترسم."
+  },
+  {
+    "id": 91,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "همه کارهام همیشه درست پیش می‌ره."
+  },
+  {
+    "id": 92,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه بهترین راه رو پیدا می‌کنم."
+  },
+  {
+    "id": 93,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت خسته نمی‌شم."
+  },
+  {
+    "id": 94,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من تو همه چی حرفه‌ای‌ام."
+  },
+  {
+    "id": 95,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "همه همیشه ازم تعریف می‌کنن."
+  },
+  {
+    "id": 96,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت به کمک کسی نیاز ندارم."
+  },
+  {
+    "id": 97,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه می‌دونم چی می‌خوام."
+  },
+  {
+    "id": 98,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت از تصمیم‌هام پشیمون نمی‌شم."
+  },
+  {
+    "id": 99,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من همیشه از همه جلوترم."
+  },
+  {
+    "id": 100,
+    "category": "Control",
+    "weight": 1,
+    "is_control": true,
+    "text": "من هیچ‌وقت ناامید نمی‌شم."
+  }
+]
+

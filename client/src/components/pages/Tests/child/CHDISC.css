@@ -1,0 +1,593 @@
+/* فونت وزیر */
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.eot');
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.woff2') format('woff2'),
+       /* url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.woff') format('woff'), */
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff2') format('woff2'),
+       /* url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff') format('woff'), */
+       url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* تنظیمات پایه */
+.chdisc-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+}
+
+.chdisc-wrapper {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  line-height: 1.6;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+.chdisc-container {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chdisc-container::before {
+  content: '🌟';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  animation: sparkle 2s infinite;
+}
+
+/* تایپوگرافی */
+.chdisc-h1 {
+  font-size: 1.8rem;
+  color: #d81b60;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.chdisc-h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 50px;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6f91, #d81b60);
+  border-radius: 5px;
+}
+
+.chdisc-h2 {
+  font-size: 1.5rem;
+  color: #f06292;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chdisc-h3 {
+  font-size: 1.2rem;
+  color: #ec407a;
+  margin-bottom: 0.75rem;
+}
+
+.chdisc-h4 {
+  font-size: 1.1rem;
+  color: #ec407a;
+  margin-bottom: 0.5rem;
+}
+
+.chdisc-p {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* بخش معرفی */
+.chdisc-intro-section {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: #fff3e0;
+  border-right: 5px solid #ff8a65;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.chdisc-intro-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 138, 101, 0.2);
+}
+
+.chdisc-intro-section::before {
+  content: '🎉';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* پیشرفت */
+.chdisc-progress-bar {
+  height: 15px;
+  background: #ffebee;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chdisc-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6f91, #d81b60);
+  border-radius: 15px;
+  transition: width 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chdisc-progress-bar-fill::after {
+  content: '🚀';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+
+.chdisc-progress-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* کارت سؤال */
+.chdisc-question-card {
+  background: #fffde7;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border-right: 5px solid #ffca28;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.chdisc-question-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 202, 40, 0.2);
+}
+
+.chdisc-question-number {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #ffca28;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* گروه رادیو */
+.chdisc-radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+}
+
+.chdisc-radio-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.chdisc-radio-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.chdisc-radio-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.chdisc-radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #e0f7fa;
+  color: #555;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chdisc-radio-input:checked + .chdisc-radio-button {
+  background: #ff6f91;
+  color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 5px rgba(255, 111, 145, 0.3);
+}
+
+.chdisc-radio-input:focus + .chdisc-radio-button {
+  box-shadow: 0 0 0 5px rgba(255, 111, 145, 0.3);
+}
+
+.chdisc-radio-button:hover {
+  background: #b2ebf2;
+  transform: scale(1.1);
+}
+
+/* دکمه‌ها */
+.chdisc-button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.chdisc-prev-button,
+.chdisc-next-button,
+.chdisc-submit-button,
+.chdisc-restart-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chdisc-prev-button {
+  background: #b0bec5;
+  color: #fff;
+}
+
+.chdisc-prev-button:hover:not(:disabled) {
+  background: #90a4ae;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(144, 164, 174, 0.3);
+}
+
+.chdisc-next-button,
+.chdisc-submit-button {
+  background: #ff6f91;
+  color: #fff;
+}
+
+.chdisc-next-button:hover:not(:disabled),
+.chdisc-submit-button:hover:not(:disabled) {
+  background: #d81b60;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3);
+}
+
+.chdisc-restart-button {
+  background: #26a69a;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+
+.chdisc-restart-button:hover {
+  background: #00897b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 137, 123, 0.3);
+}
+
+.chdisc-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* نتایج */
+.chdisc-results-container {
+  animation: bounceIn 0.6s ease;
+}
+
+.chdisc-score-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.chdisc-score-card {
+  padding: 1.2rem;
+  background: #f3e5f5;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chdisc-score-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.chdisc-score-card .chdisc-h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.chdisc-score-bar {
+  height: 20px;
+  background: #eceff1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chdisc-score-bar-fill {
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: width 1.2s ease;
+  animation: growWidth 1.8s ease;
+}
+
+.chdisc-score-bar-fill.D {
+  background: linear-gradient(90deg, #ef5350, #c62828);
+}
+
+.chdisc-score-bar-fill.I {
+  background: linear-gradient(90deg, #ffca28, #f9a825);
+}
+
+.chdisc-score-bar-fill.S {
+  background: linear-gradient(90deg, #26a69a, #00796b);
+}
+
+.chdisc-score-bar-fill.C {
+  background: linear-gradient(90deg, #42a5f5, #1976d2);
+}
+
+/* آنالیز شخصیت */
+.chdisc-personality-description,
+.chdisc-detailed-analysis {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-right: 5px solid #26a69a;
+  animation: fadeIn 0.8s ease;
+}
+
+.chdisc-detailed-analysis {
+  border-right-color: #ffca28;
+}
+
+.chdisc-analysis-prompt {
+  background: #fff3e0;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* آلرت و پیام‌ها */
+.chdisc-alert {
+  background: #ffebee;
+  border-right: 5px solid #ef5350;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  color: #c62828;
+  animation: shake 0.4s ease;
+}
+
+.chdisc-loading,
+.chdisc-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.chdisc-loading {
+  animation: pulse 1.5s infinite;
+}
+
+/* تاریخچه نتایج */
+.chdisc-history-section {
+  border-top: 2px dashed #ffca28;
+  padding-top: 1.5rem;
+}
+
+.chdisc-history-list {
+  list-style: none;
+}
+
+.chdisc-history-item {
+  background: #e3f2fd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border-right: 4px solid #42a5f5;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chdisc-history-item:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* واکنش‌گرایی */
+@media screen and (max-width: 768px) {
+  .chdisc-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .chdisc-score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chdisc-radio-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .chdisc-radio-options {
+    order: 2;
+    margin: 0.5rem 0;
+  }
+
+  .chdisc-button-group {
+    flex-direction: column;
+  }
+
+  .chdisc-prev-button,
+  .chdisc-next-button,
+  .chdisc-submit-button,
+  .chdisc-restart-button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chdisc-container {
+    padding: 0.75rem;
+  }
+
+  .chdisc-h1 {
+    font-size: 1.3rem;
+  }
+
+  .chdisc-question-card {
+    padding: 0.75rem;
+  }
+
+  .chdisc-radio-button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}

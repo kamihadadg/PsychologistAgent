@@ -65,7 +65,7 @@ function Sidebar() {
           </div>
           
           <div className="sidebar-section">
-            <h3>Agents</h3>
+            <h3>TESTS</h3>
             <ul>
               <li>
                 <Link to="/DISC" className="sidebar-link">
@@ -74,9 +74,9 @@ function Sidebar() {
                 </Link>
               </li>
               <li>
-                <Link to="/DISC" className="sidebar-link">
+                <Link to="/CHDISC" className="sidebar-link">
                   <FaExchangeAlt className="nav-icon" />
-                  <span>DISC CH</span>
+                  <span>DISC CHILD</span>
                 </Link>
               </li>
             </ul>
