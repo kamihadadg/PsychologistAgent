@@ -3,77 +3,95 @@
   "language": "Language",
   "select_language": "Select Language",
   "home": {
-    "logo": "KMG1 Trading",
+    "logo": "LearnEasy",
     "nav": {
       "features": "Features",
+      "features.href": "#features",
       "pricing": "Pricing",
-      "about": "About Us", 
+      "pricing.href": "#pricing",
+      "about": "About Us",
+      "about.href": "#about",
       "signIn": "SIGN IN",
       "getStarted": "GET STARTED"
     },
     "hero": {
-      "title": "Advanced Crypto Trading Platform",
-      "description": "Experience automated crypto trading with our advanced bots. Maximize your profits with real-time market analysis, 24/7, without manual intervention!",
-      "getStarted": "Get Started"
+      "title": "Fun Learning with Quizzes!",
+      "description": "Discover exciting educational and psychological tests designed for kids. Learn, grow, and have fun with interactive quizzes!",
+      "getStarted": "Start Now"
     },
     "features": {
-      "title": "Key Features",
-      "automation": {
-        "title": "Full Automation",
-        "description": "Trade 24/7 without your presence."
+      "title": "Why Choose LearnEasy?",
+      "learning": {
+        "title": "Easy Learning",
+        "description": "Explore lessons through fun games and activities."
       },
-      "analysis": {
-        "title": "Advanced Analysis",
-        "description": "Market analysis with AI and smart algorithms."
+      "quizzes": {
+        "title": "Interactive Quizzes",
+        "description": "Test your knowledge with engaging quizzes on various subjects."
       },
-      "crypto": {
-        "title": "Crypto Support",
-        "description": "Support for Bitcoin, Ethereum, and other cryptocurrencies."
+      "wellbeing": {
+        "title": "Emotional Wellbeing",
+        "description": "Understand your feelings with our gentle psychological assessments."
       }
     },
     "pricing": {
-      "title": "Pricing Plans",
-      "basic": {
-        "title": "Basic",
-        "price": "$19/month",
+      "title": "Choose Your Plan",
+      "free": {
+        "title": "Free",
+        "price": "$0/month",
         "features": [
-          "Up to 5 trades per day",
-          "Support for 3 cryptocurrencies",
-          "Basic market analysis",
-          "Email support"
+          "Access to 5 quizzes per month",
+          "Basic subjects (Math, Science)",
+          "Email support",
+          "Progress tracking"
         ],
-        "button": "Select Plan"
+        "button": "Join Free"
       },
-      "pro": {
-        "title": "Pro",
-        "price": "$49/month",
+      "premium": {
+        "title": "Premium",
+        "price": "$9.99/month",
         "features": [
-          "Up to 20 trades per day",
-          "Support for 10 cryptocurrencies",
-          "Advanced AI analysis",
-          "24/7 chat support"
-        ],
-        "button": "Select Plan"
-      },
-      "business": {
-        "title": "Business",
-        "price": "$99/month",
-        "features": [
-          "Unlimited trades",
-          "Support for all cryptocurrencies",
-          "Custom AI strategies",
+          "Unlimited quizzes",
+          "All subjects (Math, Science, Language, Arts)",
+          "Psychological assessments",
           "Priority support"
         ],
-        "button": "Select Plan"
+        "button": "Get Premium"
+      },
+      "family": {
+        "title": "Family",
+        "price": "$19.99/month",
+        "features": [
+          "Unlimited quizzes for up to 4 kids",
+          "All subjects and assessments",
+          "Parent dashboard",
+          "24/7 support"
+        ],
+        "button": "Choose Family"
       }
+    },
+    "about": {
+      "title": "About Us",
+      "description": "At LearnEasy, we believe learning should be fun and meaningful. Our mission is to help kids grow through interactive quizzes and thoughtful psychological tests. Created by educators and child psychologists, our platform is safe, engaging, and designed to spark curiosity.",
+      "team": {
+        "lead": {
+          "name": "Expert Team",
+          "title": "Educators & Psychologists"
+        }
+      },
+      "contactButton": "Contact Us"
+    },
+    "footer": {
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy"
     }
   },
   "loading_profile": "Loading profile...",
   "profile_settings": "Profile Settings",
-  "manage_personal_info": "Manage your personal information and preferences.",
+  "manage_personal_info": "Manage your account and preferences.",
   "general": "General",
   "preferences": "Preferences",
-  "error_message": "An error occurred. Please try again.",
+  "error_message": "Something went wrong. Please try again.",
   "general_information": "General Information",
   "full_name": "Full Name",
   "email": "Email",
@@ -94,48 +112,28 @@
   "dark": "Dark",
   "system": "System",
   "save_preferences": "Save Preferences",
-  "agents_dashboard": "Agents Dashboard",
+  "dashboard": "Learning Dashboard",
   "overview": "Overview",
-  "total_profit": "Total Profit",
-  "portfolio_value": "Portfolio Value",
-  "active_agents": "Active Agents",
+  "total_progress": "Total Progress",
+  "quiz_completed": "Quizzes Completed",
+  "active_subjects": "Active Subjects",
   "success_rate": "Success Rate",
-  "agents_summary": "Agents Summary",
-  "loading_agents": "Loading agents...",
-  "error": "Error",
-  "crypto_signal_agents": "Crypto Signal Agents",
-  "crypto_trading_agents": "Crypto Trading Agents",
-  "email_agents": "Email Agents",
-  "total": "Total",
-  "active": "Active",
-  "stopped": "Stopped",
-  "manage": "Manage",
   "recent_activity": "Recent Activity",
   "date": "Date",
-  "agent": "Agent",
+  "quiz": "Quiz",
   "type": "Type",
   "action": "Action",
   "details": "Details",
-  "crypto": "Crypto",
-  "buy": "Buy",
-  "bought": "Bought",
-  "at": "at",
-  "signal": "Signal",
-  "alert": "Alert",
-  "broke_resistance": "broke resistance",
-  "process": "Process",
-  "processed": "Processed",
-  "emails_from": "emails from",
-  "sell": "Sell",
-  "sold": "Sold",
+  "math": "Math",
+  "science": "Science",
+  "completed": "Completed",
+  "score": "Score",
   "security": {
     "title": "Security Settings",
-    "subtitle": "Manage your account security and privacy settings",
+    "subtitle": "Keep your account safe and secure.",
     "tabs": {
       "password": "Password",
-      "twoFactor": "Two-Factor Auth",
-      "notifications": "Notifications",
-      "devices": "Connected Devices"
+      "notifications": "Notifications"
     },
     "password": {
       "title": "Change Password",
@@ -144,43 +142,64 @@
       "confirm": "Confirm New Password",
       "update": "Update Password"
     },
-    "twoFactor": {
-      "title": "Two-Factor Authentication",
-      "status": "2FA Status",
-      "enable": "Enable 2FA",
-      "disable": "Disable 2FA",
-      "scanQR": "Scan QR Code",
-      "enterCode": "Enter Code"
-    },
     "notifications": {
-      "title": "Security Notifications",
+      "title": "Notifications",
       "email": "Email Notifications",
-      "sms": "SMS Notifications",
       "browser": "Browser Notifications"
-    },
-    "devices": {
-      "title": "Connected Devices",
-      "currentDevice": "Current Device",
-      "lastSeen": "Last Seen",
-      "location": "Location",
-      "revoke": "Revoke Access"
     },
     "errors": {
       "passwordMismatch": "New passwords do not match",
-      "passwordChangeFailed": "Failed to change password",
-      "invalidCode": "Invalid verification code"
+      "passwordChangeFailed": "Failed to change password"
     }
   },
   "common": {
-    "loading": "Loading security settings..."
+    "loading": "Loading settings..."
   },
-  "about": {
-    "title": "About Us",
-    "description": "At KMG1 Trading, we're passionate about empowering traders with cutting-edge technology. Our mission is to simplify crypto trading by providing automated, AI-driven solutions that work around the clock to maximize your profits. Founded by a team of crypto enthusiasts and tech experts, we combine years of experience to deliver a reliable and user-friendly platform.",
-    "founder": {
-      "name": "Expert Team",
-      "title": "Crypto & AI Specialists"
-    },
-    "contactButton": "Contact Us"
-  }
+
+    "math_quiz": {
+      "title": "7th Grade Math Quiz",
+      "intro_title": "Ready for a Math Adventure?",
+      "intro_description": "Test your math skills with fun questions! Choose the correct answer for each question. It only takes a few minutes!",
+      "start_button": "Let's Start!",
+      "back_button": "Go Back",
+      "instructions": "Choose the correct answer for each question.",
+      "of": "of",
+      "questions": "Questions",
+      "previous": "Previous",
+      "next": "Next",
+      "submit": "See Results!",
+      "results": "Your Results!",
+      "correct_answers": "Correct Answers",
+      "percentage": "Score",
+      "feedback_great": "Great job! You're a math star!",
+      "feedback_good": "Good effort! Keep practicing!",
+      "feedback_try_again": "Nice try! Want to try again?",
+      "retry": "Try Again",
+      "back_to_dashboard": "Back to Dashboard",
+  
+        "math_quiz": {
+          "invalid_quiz_id": "Invalid quiz ID. Please select a valid quiz.",
+          "quiz_not_found": "This quiz is not available. Please try another one.",
+          "using_default": "Using default quiz instead.",
+          "quiz_4": "Math Quiz 4",
+          "quiz_7": "Math Quiz 7",
+          "show_answers": "Show All Answers",
+          "hide_answers": "Hide Answers",
+          "review_title": "Review Your Answers",
+          "correct_answer": "Correct Answer",
+          "your_answer": "Your Answer",
+          "no_answer": "No answer provided"
+        },
+        "not_found": {
+          "title": "Page Not Found",
+          "description": "The page you're looking for doesn't exist."
+        },
+        "dashboard": {
+          "title": "Welcome to Your Dashboard"
+        }
+      
+      
+    }
+
+  
 }

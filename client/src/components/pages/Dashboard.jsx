@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { FaChartLine, FaRobot, FaExchangeAlt, FaHistory, FaList } from 'react-icons/fa';
+import { FaBook, FaStar, FaHistory, FaList } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './Dashboard.css';
@@ -13,47 +12,73 @@ function Dashboard() {
   const { logout, user } = useAuth();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
-  const [agents, setAgents] = useState([]);
+  const [progress, setProgress] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [stats, setStats] = useState({
-    totalProfit: 0,
-    portfolioValue: 0,
-    totalTrades: 0,
-    successRate: 0
+    totalProgress: 0,
+    quizzesCompleted: 0,
+    activeSubjects: 0,
+    averageScore: 0,
   });
 
   useEffect(() => {
-    const fetchAgents = async () => {
+    const fetchProgress = async () => {
       try {
         setLoading(true);
         setError(null);
-        const response = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/dimbots?user_id=${user.id}`,
-          { headers: { Authorization: `Bearer ${user.token}` } }
-        );
-        const formattedAgents = (response.data.data || []).map(agent => ({
-          ...agent,
-          status: agent.status === 1 || agent.status === '1' ? 'active' : 'stopped',
-          agenttype: agent.bottype === 'crypto' ? 'Crypto Trading Agent' : 'Messenger Agent',
-        }));
-        setAgents(formattedAgents);
-        
-        // Fetch additional stats (mock data for now)
+        // Mock data for progress (replace with actual API call if available)
+        const mockProgress = [
+          {
+            id: 1,
+            type: 'psychological',
+            name: 'Emotional Awareness',
+            total: 10,
+            completed: 8,
+            status: 'active',
+          },
+          {
+            id: 2,
+            type: 'psychological',
+            name: 'Confidence Building',
+            total: 12,
+            completed: 6,
+            status: 'active',
+          },
+          {
+            id: 3,
+            type: 'academic',
+            name: 'Math',
+            total: 15,
+            completed: 12,
+            status: 'active',
+          },
+          {
+            id: 4,
+            type: 'academic',
+            name: 'Science',
+            total: 10,
+            completed: 7,
+            status: 'active',
+          },
+        ];
+        setProgress(mockProgress);
+
+        // Mock stats data
         setStats({
-          totalProfit: 1250.50,
-          portfolioValue: 15000.00,
-          totalTrades: 45,
-          successRate: 82.5
+          totalProgress: 75.5,
+          quizzesCompleted: 33,
+          activeSubjects: 4,
+          averageScore: 82,
         });
       } catch (err) {
-        setError(err.response?.data?.error || 'Failed to fetch agents');
+        setError('Failed to fetch progress');
       } finally {
         setLoading(false);
       }
     };
 
-    if (user?.id && user?.token) fetchAgents();
+    if (user?.id && user?.token) fetchProgress();
     else navigate('/login');
   }, [user, navigate]);
 
@@ -62,144 +87,141 @@ function Dashboard() {
     navigate('/login');
   };
 
-  const handleListCryptoAgents = () => navigate('/tradebots');
-  const handleListMessengerAgents = () => navigate('/cryptoSignals');
+  const handleListQuizzes = (type) => navigate(`/quizzes/${type}`);
 
-  const cryptoAgents = agents.filter(agent => agent.bottype === 'TradeBot');
-  const messengerAgents = agents.filter(agent => agent.bottype === 'agent');
-  
-  const cryptoAgentsActive = cryptoAgents.filter(agent => agent.status === 'active').length;
-  const cryptoAgentsStopped = cryptoAgents.filter(agent => agent.status === 'stopped').length;
-  const messengerAgentsActive = messengerAgents.filter(agent => agent.status === 'active').length;
-  const messengerAgentsStopped = messengerAgents.filter(agent => agent.status === 'stopped').length;
+  const psychProgress = progress.filter((item) => item.type === 'psychological');
+  const academicProgress = progress.filter((item) => item.type === 'academic');
+  const psychCompleted = psychProgress.reduce((sum, item) => sum + item.completed, 0);
+  const academicCompleted = academicProgress.reduce((sum, item) => sum + item.completed, 0);
 
   return (
     <div className="dashboard-wrapper" dir={i18n.dir()}>
-
       <Sidebar />
       <main className="dashboard-main">
         <div className="dashboard-container">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {t('agents_dashboard')}
+            {t('dashboard')}
           </motion.h1>
 
           <section className="dashboard-overview">
-            <h2><FaChartLine /> {t('overview')}</h2>
+            <h2>
+              <FaStar /> {t('overview')}
+            </h2>
             <div className="overview-stats">
-              <motion.div 
+              <motion.div
                 className="stat-card"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
-                <h3>{t('total_profit')}</h3>
-                <p>${stats.totalProfit.toFixed(2)}</p>
-                <span className="trend positive">+12.5%</span>
-              </motion.div>
-              <motion.div 
-                className="stat-card"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <h3>{t('portfolio_value')}</h3>
-                <p>${stats.portfolioValue.toFixed(2)}</p>
+                <h3>{t('total_progress')}</h3>
+                <p>{stats.totalProgress.toFixed(1)}%</p>
                 <span className="trend positive">+5.2%</span>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="stat-card"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
-                <h3>{t('active_agents')}</h3>
-                <p>{cryptoAgentsActive + messengerAgentsActive}</p>
-                <span className="trend neutral">{t('total')}: {agents.length}</span>
+                <h3>{t('quiz_completed')}</h3>
+                <p>{stats.quizzesCompleted}</p>
+                <span className="trend neutral">{t('total')}: 40</span>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="stat-card"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
+                <h3>{t('active_subjects')}</h3>
+                <p>{stats.activeSubjects}</p>
+                <span className="trend neutral">{t('total')}: 6</span>
+              </motion.div>
+              <motion.div
+                className="stat-card"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <h3>{t('success_rate')}</h3>
-                <p>{stats.successRate}%</p>
-                <span className="trend positive">+2.3%</span>
+                <p>{stats.averageScore}%</p>
+                <span className="trend positive">+3.5%</span>
               </motion.div>
             </div>
           </section>
 
-          <section className="dashboard-agent-summary">
-            <h2><FaRobot /> {t('agents_summary')}</h2>
+          <section className="dashboard-progress">
+            <h2>
+              <FaBook /> {t('progress')}
+            </h2>
             {loading ? (
-              <div className="loading-spinner">{t('loading_agents')}</div>
+              <div className="loading-spinner">{t('common.loading')}</div>
             ) : error ? (
               <p className="error">{t('error')}: {error}</p>
             ) : (
-              <div className="agent-summary-container">
-                <motion.div 
-                  className="agent-summary-card"
+              <div className="progress-container">
+                <motion.div
+                  className="progress-card"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <h3><FaRobot /> {t('crypto_signal_agents')}</h3>
-                  <div className="agent-stats">
+                  <h3>
+                    <FaBook /> {t('psychological_tests')}
+                  </h3>
+                  <div className="progress-stats">
                     <div className="stat-item">
                       <span className="stat-label">{t('total')}</span>
-                      <span className="stat-value">{messengerAgents.length}</span>
+                      <span className="stat-value">{psychProgress.length}</span>
                     </div>
                     <div className="stat-item">
-                      <span className="stat-label">{t('active')}</span>
-                      <span className="stat-value active">{messengerAgentsActive}</span>
-                    </div>
-                    <div className="stat-item">
-                      <span className="stat-label">{t('stopped')}</span>
-                      <span className="stat-value stopped">{messengerAgentsStopped}</span>
+                      <span className="stat-label">{t('completed')}</span>
+                      <span className="stat-value">{psychCompleted}</span>
                     </div>
                   </div>
-                  <div className="agent-buttons">
-                    <motion.button 
+                  <div className="progress-buttons">
+                    <motion.a
+                      href="/quizzes/psychological"
                       className="btn-primary"
-                      onClick={handleListMessengerAgents}
+                      onClick={() => handleListQuizzes('psychological')}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <FaList /> {t('manage')}
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </motion.div>
 
-                <motion.div 
-                  className="agent-summary-card"
+                <motion.div
+                  className="progress-card"
                   initial={{ opacity: 0, x: 0 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <h3><FaExchangeAlt /> {t('crypto_trading_agents')}</h3>
-                  <div className="agent-stats">
+                  <h3>
+                    <FaBook /> {t('academic_quizzes')}
+                  </h3>
+                  <div className="progress-stats">
                     <div className="stat-item">
                       <span className="stat-label">{t('total')}</span>
-                      <span className="stat-value">{cryptoAgents.length}</span>
+                      <span className="stat-value">{academicProgress.length}</span>
                     </div>
                     <div className="stat-item">
-                      <span className="stat-label">{t('active')}</span>
-                      <span className="stat-value active">{cryptoAgentsActive}</span>
-                    </div>
-                    <div className="stat-item">
-                      <span className="stat-label">{t('stopped')}</span>
-                      <span className="stat-value stopped">{cryptoAgentsStopped}</span>
+                      <span className="stat-label">{t('completed')}</span>
+                      <span className="stat-value">{academicCompleted}</span>
                     </div>
                   </div>
-                  <div className="agent-buttons">
-                    <motion.button 
+                  <div className="progress-buttons">
+                    <motion.a
+                      href="/quizzes/academic"
                       className="btn-primary"
-                      onClick={handleListCryptoAgents}
+                      onClick={() => handleListQuizzes('academic')}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <FaList /> {t('manage')}
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </motion.div>
               </div>
@@ -207,13 +229,15 @@ function Dashboard() {
           </section>
 
           <section className="dashboard-history">
-            <h2><FaHistory /> {t('recent_activity')}</h2>
+            <h2>
+              <FaHistory /> {t('recent_activity')}
+            </h2>
             <div className="history-container">
               <table className="history-table">
                 <thead>
                   <tr>
                     <th>{t('date')}</th>
-                    <th>{t('agent')}</th>
+                    <th>{t('quiz')}</th>
                     <th>{t('type')}</th>
                     <th>{t('action')}</th>
                     <th>{t('details')}</th>
@@ -221,25 +245,31 @@ function Dashboard() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>2023-12-15 09:30</td>
-                    <td>TrendFollower #1</td>
-                    <td>{t('crypto')}</td>
-                    <td>{t('buy')}</td>
-                    <td>{t('bought')} 0.15 BTC {t('at')} $42,650</td>
+                    <td>2025-05-04 10:15</td>
+                    <td>Math Quiz #3</td>
+                    <td>{t('math')}</td>
+                    <td>{t('completed')}</td>
+                    <td>
+                      {t('score')}: <span className="score high">92%</span>
+                    </td>
                   </tr>
                   <tr>
-                    <td>2023-12-15 08:45</td>
-                    <td>AlertAgent #3</td>
-                    <td>{t('signal')}</td>
-                    <td>{t('alert')}</td>
-                    <td>ETH {t('broke_resistance')} {t('at')} $2,250</td>
+                    <td>2025-05-03 14:30</td>
+                    <td>Emotional Awareness</td>
+                    <td>{t('psychological')}</td>
+                    <td>{t('completed')}</td>
+                    <td>
+                      {t('score')}: <span className="score high">85%</span>
+                    </td>
                   </tr>
                   <tr>
-                    <td>2023-12-14 14:22</td>
-                    <td>TrendFollower #2</td>
-                    <td>{t('crypto')}</td>
-                    <td>{t('sell')}</td>
-                    <td>{t('sold')} 12.5 XRP {t('at')} $0.65</td>
+                    <td>2025-05-02 09:45</td>
+                    <td>Science Quiz #2</td>
+                    <td>{t('science')}</td>
+                    <td>{t('completed')}</td>
+                    <td>
+                      {t('score')}: <span className="score low">68%</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaRobot, FaChartLine, FaCoins, FaShieldAlt, FaRocket, FaCog, FaUsers, FaHeadset } from 'react-icons/fa';
+import { FaBook, FaPencilAlt, FaHeart, FaStar, FaUsers, FaQuestionCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import './Home.css';
@@ -7,7 +7,7 @@ import './Home.css';
 import Header from './Header';
 
 function Home() {
-  const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const header = document.querySelector('.header');
@@ -26,9 +26,9 @@ function Home() {
     <div className="home-container" dir={i18n.dir()}>
       {/* Animated Background SVG */}
       <div className="background-svg">
-        <object 
-          data="/assets/hero-bg.svg" 
-          type="image/svg+xml" 
+        <object
+          data="/assets/education-bg.svg"
+          type="image/svg+xml"
           className="background-image"
           aria-label="Animated Background"
         >
@@ -37,12 +37,12 @@ function Home() {
       </div>
 
       {/* Header */}
-<Header />
+      <Header />
 
       {/* Hero Section */}
       <section className="hero">
         <div className="content">
-          <motion.div 
+          <motion.div
             className="hero-content"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,22 +51,23 @@ function Home() {
             <h1>{t('home.hero.title')}</h1>
             <p>{t('home.hero.description')}</p>
             <div className="hero-buttons">
-              <motion.a 
-                href="#start" 
+              <motion.a
+                href="#start"
                 className="btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >{t('home.hero.getStarted')}</motion.a>
+              >
+                {t('home.hero.getStarted')}
+              </motion.a>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="hero-image"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <img src="/assets/hero-image.jpg" alt="Crypto Trading Bot" className="hero-img" />
-            {/* <img src="/assets/Agentcreat.jpg" alt="Crypto Trading Bot" className="hero-img" /> */}
+            <img src="/assets/education-hero.png" alt="Educational Tests" className="hero-img" />
           </motion.div>
         </div>
       </section>
@@ -79,9 +80,11 @@ function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-          >{t('home.features.title')}</motion.h2>
+          >
+            {t('home.features.title')}
+          </motion.h2>
           <div className="feature-list">
-            <motion.div 
+            <motion.div
               className="feature-item"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -89,11 +92,11 @@ function Home() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <FaRobot className="feature-icon" />
-              <h3>{t('home.features.automation.title')}</h3>
-              <p>{t('home.features.automation.description')}</p>
+              <FaBook className="feature-icon" />
+              <h3>{t('home.features.learning.title')}</h3>
+              <p>{t('home.features.learning.description')}</p>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="feature-item"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -101,11 +104,11 @@ function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <FaChartLine className="feature-icon" />
-              <h3>{t('home.features.analysis.title')}</h3>
-              <p>{t('home.features.analysis.description')}</p>
+              <FaPencilAlt className="feature-icon" />
+              <h3>{t('home.features.quizzes.title')}</h3>
+              <p>{t('home.features.quizzes.description')}</p>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="feature-item"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -113,9 +116,9 @@ function Home() {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <FaCoins className="feature-icon" />
-              <h3>{t('home.features.crypto.title')}</h3>
-              <p>{t('home.features.crypto.description')}</p>
+              <FaHeart className="feature-icon" />
+              <h3>{t('home.features.wellbeing.title')}</h3>
+              <p>{t('home.features.wellbeing.description')}</p>
             </motion.div>
           </div>
         </div>
@@ -129,9 +132,11 @@ function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-          >{t('home.pricing.title')}</motion.h2>
+          >
+            {t('home.pricing.title')}
+          </motion.h2>
           <div className="pricing-list">
-            <motion.div 
+            <motion.div
               className="pricing-item"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -139,22 +144,24 @@ function Home() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <FaCog className="pricing-icon" />
-              <h3>{t('home.pricing.basic.title')}</h3>
-              <p className="price">{t('home.pricing.basic.price')}</p>
+              <FaStar className="pricing-icon" />
+              <h3>{t('home.pricing.free.title')}</h3>
+              <p className="price">{t('home.pricing.free.price')}</p>
               <ul>
-                {t('home.pricing.basic.features', { returnObjects: true }).map((feature, index) => (
+                {t('home.pricing.free.features', { returnObjects: true }).map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <motion.a 
-                href="#signup" 
+              <motion.a
+                href="#signup"
                 className="btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >{t('home.pricing.basic.button')}</motion.a>
+              >
+                {t('home.pricing.free.button')}
+              </motion.a>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="pricing-item popular"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -162,22 +169,24 @@ function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <FaRocket className="pricing-icon" />
-              <h3>{t('home.pricing.pro.title')}</h3>
-              <p className="price">{t('home.pricing.pro.price')}</p>
+              <FaBook className="pricing-icon" />
+              <h3>{t('home.pricing.premium.title')}</h3>
+              <p className="price">{t('home.pricing.premium.price')}</p>
               <ul>
-                {t('home.pricing.pro.features', { returnObjects: true }).map((feature, index) => (
+                {t('home.pricing.premium.features', { returnObjects: true }).map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <motion.a 
-                href="#signup" 
+              <motion.a
+                href="#signup"
                 className="btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >{t('home.pricing.pro.button')}</motion.a>
+              >
+                {t('home.pricing.premium.button')}
+              </motion.a>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="pricing-item"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
@@ -186,19 +195,21 @@ function Home() {
               viewport={{ once: true }}
             >
               <FaUsers className="pricing-icon" />
-              <h3>{t('home.pricing.business.title')}</h3>
-              <p className="price">{t('home.pricing.business.price')}</p>
+              <h3>{t('home.pricing.family.title')}</h3>
+              <p className="price">{t('home.pricing.family.price')}</p>
               <ul>
-                {t('home.pricing.business.features', { returnObjects: true }).map((feature, index) => (
+                {t('home.pricing.family.features', { returnObjects: true }).map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <motion.a 
-                href="#signup" 
+              <motion.a
+                href="#signup"
                 className="btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >{t('home.pricing.business.button')}</motion.a>
+              >
+                {t('home.pricing.family.button')}
+              </motion.a>
             </motion.div>
           </div>
         </div>
@@ -212,33 +223,32 @@ function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-          >About Us</motion.h2>
-          <motion.div 
+          >
+            {t('home.about.title')}
+          </motion.h2>
+          <motion.div
             className="about-content"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <p>
-              {t('about.description')}
-            </p>
+            <p>{t('home.about.description')}</p>
             <div className="team">
-              <motion.div 
-                className="team-member"
-                whileHover={{ scale: 1.05 }}
-              >
-                <FaShieldAlt className="team-icon" />
-                <h3>{t('about.founder.name')}</h3>
-                <p>{t('about.founder.title')}</p>
+              <motion.div className="team-member" whileHover={{ scale: 1.05 }}>
+                <FaQuestionCircle className="team-icon" />
+                <h3>{t('home.about.team.lead.name')}</h3>
+                <p>{t('home.about.team.lead.title')}</p>
               </motion.div>
             </div>
-            <motion.a 
-              href="#contact" 
+            <motion.a
+              href="#contact"
               className="btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >{t('about.contactButton')}</motion.a>
+            >
+              {t('home.about.contactButton')}
+            </motion.a>
           </motion.div>
         </div>
       </section>
@@ -246,9 +256,9 @@ function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="content">
-          <p>© {new Date().getFullYear()} KMG1 Trading. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} LearnEasy. All Rights Reserved.</p>
           <div className="footer-links">
-            <a href="/terms">Terms of Use</a> | <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">{t('home.footer.terms')}</a> | <a href="/privacy">{t('home.footer.privacy')}</a>
           </div>
         </div>
       </footer>

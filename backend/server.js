@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:3101'],
+    origin: ['http://localhost:3101','http://192.168.1.112:3101'],
     // origin: ['*'],
     credentials: true
   }));

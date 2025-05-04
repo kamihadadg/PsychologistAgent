@@ -47,58 +47,42 @@ function Sidebar() {
         
         <nav className="sidebar-nav">
           <div className="sidebar-section">
-            <h3>Dashboard</h3>
-            <ul>
-              <li>
-                <Link to="/dashboard" className="sidebar-link">
-                  <FaChartLine className="nav-icon" />
-                  <span>Dashboard</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/dashboard" className="sidebar-link">
-                  <FaStore className="nav-icon" />
-                  <span>Market Place</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="sidebar-section">
-            <h3>TESTS</h3>
+            <h3>Psycology</h3>
             <ul>
               <li>
                 <Link to="/DISC" className="sidebar-link">
-                  <FaRobot className="nav-icon" />
-                  <span>DISC</span>
+                  <FaChartLine className="nav-icon" />
+                  <span>Disc Adult</span>
                 </Link>
               </li>
               <li>
                 <Link to="/CHDISC" className="sidebar-link">
-                  <FaExchangeAlt className="nav-icon" />
-                  <span>DISC CHILD</span>
+                  <FaStore className="nav-icon" />
+                  <span>Disk Child</span>
                 </Link>
               </li>
             </ul>
           </div>
           
           <div className="sidebar-section">
-            <h3>Billing</h3>
+            <h3>QUIZ</h3>
             <ul>
               <li>
-                <Link to="/profile" className="sidebar-link">
-                  <FaUser className="nav-icon" />
-                  <span>Transaction</span>
+                <Link to="/MathQuiz/7" className="sidebar-link">
+                  <FaRobot className="nav-icon" />
+                  <span>Maths7</span>
                 </Link>
               </li>
               <li>
-                <Link to="/security" className="sidebar-link">
-                  <FaShieldAlt className="nav-icon" />
-                  <span>Receipt</span>
+                <Link to="/MathQuiz/4" className="sidebar-link">
+                  <FaExchangeAlt className="nav-icon" />
+                  <span>Maths4</span>
                 </Link>
               </li>
             </ul>
           </div>
+          
+          
           
           <div className="sidebar-section">
             <h3>Account</h3>

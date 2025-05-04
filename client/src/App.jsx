@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import './i18n';
 import './components/LanguageSwitcher.css';
 
@@ -19,8 +19,13 @@ import Security from './components/pages/Security';
 import DISC from './components/pages/Tests/Adult/DISC';
 import CHDISC from './components/pages/Tests/child/CHDISC';
 
+import MathQuiz from './components/pages/Quiz/Math/MathQuiz';
 
 
+const MathQuizWrapper = () => {
+  const { quizId } = useParams();
+  return <MathQuiz quizId={parseInt(quizId || '1')} />;
+};
 
 function App() {
   return (
@@ -39,7 +44,9 @@ function App() {
             <Route path="/DISC"   element={<ProtectedRoute> <DISC />   </ProtectedRoute> } />
 
             <Route path="/CHDISC"   element={<ProtectedRoute> <CHDISC />   </ProtectedRoute> } />
-          
+            
+            <Route path="/MathQuiz/:quizId"   element={<ProtectedRoute> <MathQuizWrapper />   </ProtectedRoute> } />
+            
             
             
             <Route path="/profile"   element={<ProtectedRoute> <Profile />   </ProtectedRoute> } />
